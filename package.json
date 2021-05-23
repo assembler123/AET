@@ -9,7 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async-redis": "^1.1.7",
+    "dotenv": "^9.0.2",
     "express": "^4.17.1",
-    "mongodb": "^3.6.6"
+    "mongodb": "^3.6.6",
+    "redis": "^3.1.2"
   }
 }
