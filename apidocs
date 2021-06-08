@@ -1,0 +1,29 @@
+ADD CATEGORY
+->Hit http://localhost:4500/addCategory
+->Body JSON --->>> 
+{
+    "title":"Mens Clothing",
+    "filters":[{
+                "title":"Sizes",
+                "optKey":"size",
+                "fixed":["S","M","L","XL","XXL"],
+                "priority":1
+            },
+            {
+                "title":"Wear",
+                "optKey":"type",
+                "fixed":["Bottom Wear","Top Wear","Under Wear"],
+                "priority":2
+            },
+            { 
+                "title":"Brands",
+                "optKey":"brand",
+                "priority":3
+            }
+        ]
+}
+
+-> Set Fixed if filters needed to be fixed leave in case it varies according to product.
+-> title is shown on top when user lands on category page.
+-> optKey is display name when you will add product in this CATEGORY.
+-> priority is how these inputs get arranged on product landing Page. 

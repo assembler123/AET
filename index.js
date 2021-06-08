@@ -3,7 +3,6 @@ const app = express();
 const dotenv = require('dotenv');
 dotenv.config();
 app.use(express.urlencoded());
-
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
 const router = require('./routes')
